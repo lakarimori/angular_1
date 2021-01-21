@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class ServerComponent {
   serverId: number = 5;
   serverStatus: String = 'offline';
+  serverName = 'Um server ai';
+
+  showServerName() {
+    return `O nome do server é ${this.serverName}`;
+  }
 }

@@ -9,8 +9,8 @@ export class ServersComponent implements OnInit {
   allowServer: boolean = false;
   idTest = 'test';
   styleTest = `
-  width: 10px;
-  height: 400px;
+  width: auto;
+  height: auto;
   `;
 
   constructor() {
