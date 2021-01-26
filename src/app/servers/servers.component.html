@@ -1,1 +1,18 @@
-<p>servers works!</p>
+<button class="btn btn-primary" (click)="onButtonClick()">
+  Display Details
+</button>
+
+<span *ngFor="let count of counters">
+  <span
+    [ngStyle]="{ 'background-color': count >= 5 ? 'red' : 'transparent' }"
+    >{{ count }}</span
+  >
+</span>
+
+<span *ngFor="let count of counters; let i = index">
+  <span [ngStyle]="{ 'background-color': i >= 5 ? 'red' : 'transparent' }">{{
+    count
+  }}</span>
+</span>
+
+<p *ngIf="!toggleButton">servers works!</p>
